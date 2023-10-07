@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Start Code--small layout*/
+html {
+    background-color: rgba(122, 191, 191, .5);
+    font-family: 'BEBAS NEUE', 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    color: #0d0d0d;
+    margin: 0 5%;
+}
+
+
+body {
+    background-color: #F2F2F2;
+    max-width: 414px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "details"
+    "ingredients"
+    "directions"
+    "aside"
+    "footer";
+    position: relative;
+    height: auto;
+    padding: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    grid-area: header;
+    padding-top: 180px;
+}
+
+header img {
+    width: 100%;
+}
+/*Fonts*/
+h1, h2, h3 {
+    text-align: center;
+    margin: 2%;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0 auto;
+    padding-top: 25%;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 3% auto;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+}  
+
+p { 
+    font-family: "Montserrat", sans-serif;
+    text-transform: none;
+    font-size: 16px;
+}
+
+
+/*MENU*/
+
+menu {
+    margin: 0 auto;
+    padding-left: 8%;
+    display: flex;
+}
+
+menu li {
+    list-style-type: none;
+    margin: 0 auto;
+    position: relative;
+    color: #EB5428;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 10%;
+    padding-bottom: 2%;
+}
+
+
+menu li a {
+    margin: 0 auto;
+    padding: 1%;
+}
+
+menu li svg {
+    margin: 0;
+    padding: 1%;
+}
+
+.icon-tabler-tools-kitchen { 
+    background-color: #EB5428; 
+} 
+
+.icon-tabler-user-circle { 
+    stroke: #EB5428; 
+} 
+
+.icon-tabler-search { 
+    stroke: #F2F2F2; 
+    background-color: #EB5428; 
+} 
+
+/*HEADER*/
+
+header img {
+    width: 100%;
+}
+
+p {
+    text-align: left;
+    padding: 3% 2% 3% 3%;
+    line-height:2em;
+    margin-bottom: 1%;
+}
+
+nav {
+    padding: 0px;
+    left: 0px;
+    right: 0%;
+    border-bottom: 1px solid #0d0d0d;
+    box-shadow: 0px 0px 12px 0px #0d0d0d;
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    height: 15%;
+    width: 414px;
+    z-index: 1;
+    background-color: #FFFFFF;
+}
+
+/*Main*/
+
+dl {
+    margin: 0;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-right: 5%;
+}
+
+.sidedishes {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 0;
+    column-gap: 0%;
+    margin: 0;
+}
+
+.sidedeishes img {
+    width: 75%;
+    margin: 0px;
+    margin-left: 5%;
+    padding: 5%;
+}
+
+.sidedeishes {
+    text-align: left;
+}
+
+.ingredients li {
+    color:#0d0d0d;
+    list-style-type: disc;
+}
+
+main img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F2F2F2;
+    margin-bottom: 5%;
+}
+
+aside {
+    background-color: #7ABFBF;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+ul, ol, p {
+    margin: 0 5%
+}
+
+ul li {
+    padding-bottom: 2%;
+    list-style: none;
+    color: #EB5428
+}
+
+ol li {
+    padding-bottom: 2%;
+}
